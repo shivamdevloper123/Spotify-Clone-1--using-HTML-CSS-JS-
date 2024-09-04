@@ -1,0 +1,132 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling */
+body {
+    background: #ddcc94a9;
+}
+
+/* Navbar styling */
+nav {
+    display: flex; /* Flexbox for the nav container */
+    justify-content: space-between; /* Space between the two <ul> elements */
+    align-items: center;
+    background: black; 
+    color: white;
+    height: 48px;
+    padding: 0 16px; /* Add some padding to the sides */
+}
+
+/* Styling for <ul> inside the navbar */
+nav ul {
+    display: flex; /* Flexbox for list items */
+    align-items: center;
+    list-style-type: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Styling for each list item */
+nav ul li {
+    padding: 0 12px;
+}
+
+/* Logo styling */
+.logo img { 
+    width: 44px;
+    padding: 0 8px;
+}
+
+.logo{
+    
+        display: flex;
+        align-items: center;
+        font-weight: bolder;
+        font-size: 1.3rem;
+    
+}
+.container {
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+   font-family: 'Varela Round', sans-serif;
+   display: flex;
+   margin: 23px auto;
+   width: 70%;
+   border-radius: 12px;
+   padding: 34px;
+   background-image: url(bg.jpg) ;
+   background-size:contain; /* This makes the background image cover the entire container */
+   background-position: right; /* This centers the image within the container */
+   background-repeat: no-repeat; /* Prevents the background image from repeating */
+}
+
+.bottom {
+    background-color: black;
+    color: white;
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
+}
+
+.icon{
+    margin-top: 14px;
+}
+
+.icon i{
+    cursor: pointer;
+}
+.songItemContainer{
+    margin-top: 60px;
+}
+
+.songItem{
+    height: 35px;
+background-color: white;
+color: black;
+display: flex;
+justify-content: space-between;
+align-items: center; 
+margin : 10px;  
+border-radius: 25px; 
+}
+
+.songItem img{
+    border-radius: 15px;
+    width: 30px;
+    margin: 0 23px;
+
+
+}
+ .timestamp{  
+     margin: 0 10px;
+ }
+ .timestamp i{
+cursor: pointer;
+ }
+
+ .songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
